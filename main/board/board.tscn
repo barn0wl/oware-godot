@@ -1,0 +1,46 @@
+[gd_scene load_steps=3 format=3 uid="uid://dfprtl6j3nq7t"]
+
+[ext_resource type="PackedScene" uid="uid://byumqx6nlv131" path="res://main/board/board_half.tscn" id="1_adg2v"]
+[ext_resource type="Script" path="res://main/board/board.gd" id="1_ay5m5"]
+
+[node name="board" type="Node2D"]
+script = ExtResource("1_ay5m5")
+metadata/_edit_lock_ = true
+
+[node name="board_half" parent="." instance=ExtResource("1_adg2v")]
+unique_name_in_owner = true
+position = Vector2(0, -44)
+metadata/_edit_group_ = true
+
+[node name="board_half2" parent="." instance=ExtResource("1_adg2v")]
+unique_name_in_owner = true
+position = Vector2(0, 44)
+rotation = -3.14159
+metadata/_edit_group_ = true
+
+[node name="house" parent="board_half2" index="1"]
+index = 6
+player_owner = true
+
+[node name="house2" parent="board_half2" index="2"]
+index = 7
+player_owner = true
+
+[node name="house3" parent="board_half2" index="3"]
+index = 8
+player_owner = true
+
+[node name="house4" parent="board_half2" index="4"]
+index = 9
+player_owner = true
+
+[node name="house5" parent="board_half2" index="5"]
+index = 10
+player_owner = true
+
+[node name="house6" parent="board_half2" index="6"]
+index = 11
+player_owner = true
+
+[editable path="board_half"]
+[editable path="board_half2"]

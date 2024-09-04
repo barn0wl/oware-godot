@@ -1,0 +1,34 @@
+[gd_scene load_steps=3 format=3 uid="uid://byumqx6nlv131"]
+
+[ext_resource type="Texture2D" uid="uid://bt2a2j3mjwo8q" path="res://main/board/boardhalf.svg" id="1_ra5l4"]
+[ext_resource type="PackedScene" uid="uid://bvawai5brthk6" path="res://main/house/house.tscn" id="2_7fiq7"]
+
+[node name="board_half" type="Node2D"]
+metadata/_edit_lock_ = true
+
+[node name="board_half_sprite" type="Sprite2D" parent="."]
+scale = Vector2(0.95, 0.95)
+texture = ExtResource("1_ra5l4")
+
+[node name="house" parent="." instance=ExtResource("2_7fiq7")]
+position = Vector2(-140, 0)
+
+[node name="house2" parent="." instance=ExtResource("2_7fiq7")]
+position = Vector2(-84, 0)
+index = 1
+
+[node name="house3" parent="." instance=ExtResource("2_7fiq7")]
+position = Vector2(-28, 0)
+index = 2
+
+[node name="house4" parent="." instance=ExtResource("2_7fiq7")]
+position = Vector2(28, 0)
+index = 3
+
+[node name="house5" parent="." instance=ExtResource("2_7fiq7")]
+position = Vector2(84, 0)
+index = 4
+
+[node name="house6" parent="." instance=ExtResource("2_7fiq7")]
+position = Vector2(140, 0)
+index = 5

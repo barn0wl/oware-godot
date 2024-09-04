@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=3 uid="uid://dhwda5ihydq67"]
+
+[ext_resource type="Script" path="res://main/seed/seed.gd" id="1_txhqr"]
+[ext_resource type="Texture2D" uid="uid://b16521r11b6wo" path="res://main/seed/seed.svg" id="2_5ly68"]
+
+[node name="seed" type="Node2D"]
+script = ExtResource("1_txhqr")
+
+[node name="seed_sprite" type="Sprite2D" parent="."]
+scale = Vector2(0.01, 0.01)
+texture = ExtResource("2_5ly68")
